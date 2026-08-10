@@ -1,0 +1,484 @@
+/* ============================================
+   System Design Handbook — Custom Styles
+   Premium visual enhancements for MkDocs Material
+   ============================================ */
+
+/* --- Smooth Scrolling --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Chapter Metadata Card --- */
+.chapter-meta {
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.chapter-meta .meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Reading Time Badge */
+.meta-reading-time {
+  background: rgba(68, 138, 255, 0.12);
+  color: #448aff;
+  border: 1px solid rgba(68, 138, 255, 0.25);
+}
+
+[data-md-color-scheme="slate"] .meta-reading-time {
+  background: rgba(68, 138, 255, 0.15);
+  color: #82b1ff;
+}
+
+/* Difficulty Badges */
+.meta-difficulty-beginner {
+  background: rgba(76, 175, 80, 0.12);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.25);
+}
+
+.meta-difficulty-intermediate {
+  background: rgba(255, 193, 7, 0.12);
+  color: #f9a825;
+  border: 1px solid rgba(255, 193, 7, 0.25);
+}
+
+.meta-difficulty-advanced {
+  background: rgba(244, 67, 54, 0.12);
+  color: #f44336;
+  border: 1px solid rgba(244, 67, 54, 0.25);
+}
+
+[data-md-color-scheme="slate"] .meta-difficulty-beginner {
+  color: #81c784;
+}
+
+[data-md-color-scheme="slate"] .meta-difficulty-intermediate {
+  color: #ffd54f;
+}
+
+[data-md-color-scheme="slate"] .meta-difficulty-advanced {
+  color: #ef5350;
+}
+
+/* Prerequisites Badge */
+.meta-prerequisites {
+  background: rgba(156, 39, 176, 0.10);
+  color: #9c27b0;
+  border: 1px solid rgba(156, 39, 176, 0.2);
+}
+
+[data-md-color-scheme="slate"] .meta-prerequisites {
+  color: #ce93d8;
+}
+
+/* --- Key Terms Box --- */
+.key-terms {
+  background: var(--md-code-bg-color);
+  border-left: 4px solid #448aff;
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.key-terms h4 {
+  margin-top: 0;
+  color: #448aff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.key-terms dl {
+  margin-bottom: 0;
+}
+
+.key-terms dt {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.key-terms dd {
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* --- Chapter Introduction Blockquote --- */
+.md-content blockquote:first-of-type {
+  border-left: 4px solid #448aff;
+  background: rgba(68, 138, 255, 0.06);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.2rem;
+  font-size: 1.05rem;
+  font-style: normal;
+  margin: 1rem 0 1.5rem 0;
+}
+
+[data-md-color-scheme="slate"] .md-content blockquote:first-of-type {
+  background: rgba(68, 138, 255, 0.08);
+}
+
+/* --- Improved Table Styling --- */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.md-typeset table:not([class]) thead {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+.md-typeset table:not([class]) thead th {
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-bottom: none;
+}
+
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: var(--md-code-bg-color);
+}
+
+.md-typeset table:not([class]) tbody td {
+  padding: 0.6rem 1rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* --- Quick Revision Box --- */
+.revision-box {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.06), rgba(68, 138, 255, 0.06));
+  border: 1px solid rgba(76, 175, 80, 0.2);
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.revision-box h3,
+.revision-box h4 {
+  margin-top: 0;
+  color: #4caf50;
+}
+
+/* --- Production Notes Box --- */
+.production-notes {
+  background: var(--md-code-bg-color);
+  border-left: 4px solid #ff9800;
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.production-notes h4 {
+  margin-top: 0;
+  color: #ff9800;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* --- Common Mistake Correction Format --- */
+.mistake-correction {
+  margin: 0.75rem 0;
+  padding: 0.75rem 1rem;
+  background: var(--md-code-bg-color);
+  border-radius: 6px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.mistake-wrong {
+  color: #f44336;
+  font-weight: 600;
+}
+
+.mistake-correct {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+/* --- Hero Section (Home Page) --- */
+.hero-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section .hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--md-default-fg-color--light);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* --- Feature Cards Grid --- */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.feature-card {
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1.2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* --- Admonition Refinements --- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* --- Code Block Refinements --- */
+.md-typeset pre {
+  border-radius: 8px;
+}
+
+/* --- Footer Navigation Enhancement --- */
+.md-typeset .navigation-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  gap: 1rem;
+}
+
+.md-typeset .navigation-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.md-typeset .navigation-footer a:hover {
+  background: rgba(68, 138, 255, 0.08);
+  border-color: #448aff;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .chapter-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .navigation-footer {
+    flex-direction: column;
+  }
+}
+
+/* =====================================================
+   LEFT SIDEBAR — Professional Collapsible Navigation
+   ===================================================== */
+
+/* ── Hide the default Material SVG rotate icon ──────── */
+.md-nav__item--nested > .md-nav__link .md-nav__icon {
+  display: none !important;
+}
+
+/* ── Topic header (collapsed) — shows ▶ ────────────── */
+.md-nav__item--nested > .md-nav__link::before {
+  content: "▶";
+  font-size: 0.55rem;
+  margin-right: 0.5rem;
+  color: var(--md-default-fg-color--light);
+  transition: transform 0.2s ease, color 0.2s ease;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* ── Topic header (expanded) — shows ▼ ─────────────── */
+.md-nav__item--nested > input:checked ~ .md-nav__link::before,
+.md-nav__item--nested.md-nav__item--active > .md-nav__link::before {
+  content: "▼";
+  color: var(--md-primary-fg-color);
+}
+
+/* ── Topic header base style ────────────────────────── */
+.md-nav__item--nested > .md-nav__link {
+  display: flex !important;
+  align-items: center;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em;
+  padding: 0.45rem 0.75rem !important;
+  border-radius: 5px;
+  margin: 0.15rem 0;
+  transition: background 0.18s ease, color 0.18s ease;
+  color: var(--md-default-fg-color) !important;
+  text-decoration: none !important;
+}
+
+/* ── Topic header hover ─────────────────────────────── */
+.md-nav__item--nested > .md-nav__link:hover {
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-primary-fg-color) !important;
+}
+
+/* ── Active topic header (section you're inside) ────── */
+.md-nav__item--nested.md-nav__item--active > .md-nav__link {
+  color: var(--md-primary-fg-color) !important;
+  background: rgba(68, 138, 255, 0.07);
+  border-left: 3px solid var(--md-primary-fg-color);
+  border-radius: 0 5px 5px 0;
+  padding-left: 0.85rem !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item--nested.md-nav__item--active > .md-nav__link {
+  background: rgba(68, 138, 255, 0.12);
+}
+
+/* ── Child page list — indentation guide ────────────── */
+.md-nav__item--nested > .md-nav {
+  border-left: 1px solid var(--md-default-fg-color--lightest);
+  margin-left: 0.85rem;
+  padding-left: 0.1rem;
+}
+
+/* ── Child page link — base ─────────────────────────── */
+.md-nav__item--nested .md-nav__item:not(.md-nav__item--nested) > .md-nav__link {
+  display: flex !important;
+  align-items: center;
+  font-size: 0.68rem !important;
+  font-weight: 400;
+  padding: 0.28rem 0.65rem !important;
+  border-radius: 4px;
+  margin: 0.05rem 0;
+  color: var(--md-default-fg-color--light) !important;
+  transition: color 0.15s ease, background 0.15s ease;
+  text-decoration: none !important;
+}
+
+/* ── ● bullet before every child page ───────────────── */
+.md-nav__item--nested .md-nav__item:not(.md-nav__item--nested) > .md-nav__link::before {
+  content: "●";
+  font-size: 0.35rem;
+  margin-right: 0.55rem;
+  color: var(--md-default-fg-color--lighter);
+  flex-shrink: 0;
+  line-height: 1;
+  position: relative;
+  top: -0.05rem;
+}
+
+/* ── Child page hover ───────────────────────────────── */
+.md-nav__item--nested .md-nav__item:not(.md-nav__item--nested) > .md-nav__link:hover {
+  color: var(--md-primary-fg-color) !important;
+  background: transparent;
+}
+
+.md-nav__item--nested .md-nav__item:not(.md-nav__item--nested) > .md-nav__link:hover::before {
+  color: var(--md-primary-fg-color);
+}
+
+/* ── Active child page (current page you're on) ─────── */
+.md-nav__item--nested .md-nav__item:not(.md-nav__item--nested) > .md-nav__link--active {
+  font-weight: 600 !important;
+  color: var(--md-primary-fg-color) !important;
+}
+
+.md-nav__item--nested .md-nav__item:not(.md-nav__item--nested) > .md-nav__link--active::before {
+  content: "●";
+  color: var(--md-primary-fg-color);
+  font-size: 0.42rem;
+}
+
+/* =====================================================
+   RIGHT TABLE OF CONTENTS — Clean & Compact
+   ===================================================== */
+
+.md-sidebar--secondary .md-nav__title {
+  font-size: 0.62rem !important;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+  padding: 0 0.75rem 0.5rem;
+}
+
+.md-sidebar--secondary .md-nav__link {
+  font-size: 0.68rem !important;
+  font-weight: 400;
+  padding: 0.22rem 0.75rem !important;
+  border-radius: 3px;
+  border-left: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  color: var(--md-default-fg-color--light) !important;
+}
+
+.md-sidebar--secondary .md-nav__link:hover {
+  color: var(--md-primary-fg-color) !important;
+  border-left-color: var(--md-default-fg-color--lighter);
+  background: transparent;
+}
+
+.md-sidebar--secondary .md-nav__link--active {
+  font-weight: 600 !important;
+  color: var(--md-primary-fg-color) !important;
+  border-left-color: var(--md-primary-fg-color) !important;
+  background: transparent !important;
+}
+

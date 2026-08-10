@@ -1,0 +1,168 @@
+site_name: System Design Handbook
+site_description: A production-ready System Design handbook with architecture diagrams, real-world case studies, and interview preparation guides.
+site_author: Charan Dusa
+site_url: https://your-site-url.com
+
+repo_name: CHARAN-DUSA/System-Design
+repo_url: https://github.com/CHARAN-DUSA/System-Design
+
+theme:
+  name: material
+
+  language: en
+
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+  icon:
+    logo: material/book-open-page-variant
+    admonition:
+      note: material/pencil-circle
+      tip: material/lightbulb-on
+      warning: material/alert-circle
+      info: material/information
+      success: material/check-circle
+      danger: material/alert-octagon
+      example: material/test-tube
+      quote: material/format-quote-close
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.path
+    - toc.follow
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.tooltips
+
+markdown_extensions:
+
+  - admonition
+
+  - pymdownx.details
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+  - pymdownx.inlinehilite
+
+  - pymdownx.snippets
+
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  - pymdownx.keys
+
+  - pymdownx.mark
+
+  - pymdownx.critic
+
+  - attr_list
+
+  - md_in_html
+
+  - def_list
+
+  - footnotes
+
+  - abbr
+
+  - tables
+
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+plugins:
+  - search
+
+extra_css:
+  - assets/css/custom.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/CHARAN-DUSA
+
+nav:
+  - Home: index.md
+
+  - System Design:
+
+      - Overview: system-design/index.md
+
+      - Database Scaling:
+          - "01. Why Scaling": system-design/database-scaling/01-why-scaling.md
+          - "02. Scaling Types": system-design/database-scaling/02-scaling-types.md
+          - "03. Partitioning": system-design/database-scaling/03-partitioning.md
+          - "04. Sharding": system-design/database-scaling/04-sharding.md
+          - "05. Shard Key": system-design/database-scaling/05-shard-key.md
+          - "06. Replication": system-design/database-scaling/06-replication.md
+          - "07. Production Architecture": system-design/database-scaling/07-production-architecture.md
+          - "08. Amazon at Scale": system-design/database-scaling/08-amazon-at-scale.md
+          - "09. Interview Cheat Sheet": system-design/database-scaling/09-interview-cheatsheet.md
+          - "10. Summary": system-design/database-scaling/10-summary.md
+
+      - Load Balancing:
+          - "01. Introduction": system-design/load-balancing/01-introduction.md
+          - "02. Types": system-design/load-balancing/02-types.md
+          - "03. Algorithms": system-design/load-balancing/03-algorithms.md
+          - "04. Consistent Hashing": system-design/load-balancing/04-consistent-hashing.md
+          - "05. Virtual Nodes": system-design/load-balancing/05-virtual-nodes.md
+          - "06. Production Architecture": system-design/load-balancing/06-production-architecture.md
+          - "07. Interview Questions": system-design/load-balancing/07-interview-questions.md
+          - "08. Summary": system-design/load-balancing/08-summary.md
+
+      - Thrashing:
+          - "01. Introduction": system-design/thrashing/01-introduction.md
+          - "02. Memory Pressure": system-design/thrashing/02-memory-pressure.md
+          - "03. Database Thrashing": system-design/thrashing/03-database-thrashing.md
+          - "04. Cache Thrashing": system-design/thrashing/04-cache-thrashing.md
+          - "05. Detection": system-design/thrashing/05-detection.md
+          - "06. Prevention": system-design/thrashing/06-prevention.md
+          - "07. Production Examples": system-design/thrashing/07-production-examples.md
+          - "08. Summary": system-design/thrashing/08-summary.md
+
+  - Interview Preparation:
+      - Overview: interview-cheatsheets/index.md

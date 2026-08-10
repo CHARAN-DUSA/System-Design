@@ -1,0 +1,424 @@
+/* ============================================
+   System Design Handbook — Custom Styles
+   Premium visual enhancements for MkDocs Material
+   ============================================ */
+
+/* --- Smooth Scrolling --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Chapter Metadata Card --- */
+.chapter-meta {
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.chapter-meta .meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Reading Time Badge */
+.meta-reading-time {
+  background: rgba(68, 138, 255, 0.12);
+  color: #448aff;
+  border: 1px solid rgba(68, 138, 255, 0.25);
+}
+
+[data-md-color-scheme="slate"] .meta-reading-time {
+  background: rgba(68, 138, 255, 0.15);
+  color: #82b1ff;
+}
+
+/* Difficulty Badges */
+.meta-difficulty-beginner {
+  background: rgba(76, 175, 80, 0.12);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.25);
+}
+
+.meta-difficulty-intermediate {
+  background: rgba(255, 193, 7, 0.12);
+  color: #f9a825;
+  border: 1px solid rgba(255, 193, 7, 0.25);
+}
+
+.meta-difficulty-advanced {
+  background: rgba(244, 67, 54, 0.12);
+  color: #f44336;
+  border: 1px solid rgba(244, 67, 54, 0.25);
+}
+
+[data-md-color-scheme="slate"] .meta-difficulty-beginner {
+  color: #81c784;
+}
+
+[data-md-color-scheme="slate"] .meta-difficulty-intermediate {
+  color: #ffd54f;
+}
+
+[data-md-color-scheme="slate"] .meta-difficulty-advanced {
+  color: #ef5350;
+}
+
+/* Prerequisites Badge */
+.meta-prerequisites {
+  background: rgba(156, 39, 176, 0.10);
+  color: #9c27b0;
+  border: 1px solid rgba(156, 39, 176, 0.2);
+}
+
+[data-md-color-scheme="slate"] .meta-prerequisites {
+  color: #ce93d8;
+}
+
+/* --- Key Terms Box --- */
+.key-terms {
+  background: var(--md-code-bg-color);
+  border-left: 4px solid #448aff;
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.key-terms h4 {
+  margin-top: 0;
+  color: #448aff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.key-terms dl {
+  margin-bottom: 0;
+}
+
+.key-terms dt {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.key-terms dd {
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* --- Chapter Introduction Blockquote --- */
+.md-content blockquote:first-of-type {
+  border-left: 4px solid #448aff;
+  background: rgba(68, 138, 255, 0.06);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.2rem;
+  font-size: 1.05rem;
+  font-style: normal;
+  margin: 1rem 0 1.5rem 0;
+}
+
+[data-md-color-scheme="slate"] .md-content blockquote:first-of-type {
+  background: rgba(68, 138, 255, 0.08);
+}
+
+/* --- Improved Table Styling --- */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.md-typeset table:not([class]) thead {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+.md-typeset table:not([class]) thead th {
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-bottom: none;
+}
+
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: var(--md-code-bg-color);
+}
+
+.md-typeset table:not([class]) tbody td {
+  padding: 0.6rem 1rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* --- Quick Revision Box --- */
+.revision-box {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.06), rgba(68, 138, 255, 0.06));
+  border: 1px solid rgba(76, 175, 80, 0.2);
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.revision-box h3,
+.revision-box h4 {
+  margin-top: 0;
+  color: #4caf50;
+}
+
+/* --- Production Notes Box --- */
+.production-notes {
+  background: var(--md-code-bg-color);
+  border-left: 4px solid #ff9800;
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.production-notes h4 {
+  margin-top: 0;
+  color: #ff9800;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* --- Common Mistake Correction Format --- */
+.mistake-correction {
+  margin: 0.75rem 0;
+  padding: 0.75rem 1rem;
+  background: var(--md-code-bg-color);
+  border-radius: 6px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.mistake-wrong {
+  color: #f44336;
+  font-weight: 600;
+}
+
+.mistake-correct {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+/* --- Hero Section (Home Page) --- */
+.hero-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section .hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--md-default-fg-color--light);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* --- Feature Cards Grid --- */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.feature-card {
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1.2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* --- Admonition Refinements --- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* --- Code Block Refinements --- */
+.md-typeset pre {
+  border-radius: 8px;
+}
+
+/* --- Footer Navigation Enhancement --- */
+.md-typeset .navigation-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  gap: 1rem;
+}
+
+.md-typeset .navigation-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.md-typeset .navigation-footer a:hover {
+  background: rgba(68, 138, 255, 0.08);
+  border-color: #448aff;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .chapter-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .navigation-footer {
+    flex-direction: column;
+  }
+}
+
+/* --- Premium Left Sidebar Topic Header (Folders) Enhancements --- */
+.md-nav__item--nested > .md-nav__link {
+  font-size: 0.68rem !important; /* Slightly larger font for main topics */
+  font-weight: 600 !important;
+  padding: 0.4rem 0.8rem !important;
+  border-radius: 6px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0.2rem 0;
+  display: flex !important;
+  align-items: center;
+}
+
+/* Hover state for topic headers */
+.md-nav__item--nested > .md-nav__link:hover {
+  background-color: var(--md-default-fg-color--lightest);
+  color: var(--md-primary-fg-color) !important;
+  padding-left: 0.95rem !important; /* Premium slide-in effect on hover */
+}
+
+/* Active/selected topic header */
+.md-nav__item--nested.md-nav__item--active > .md-nav__link {
+  background-color: rgba(68, 138, 255, 0.08) !important;
+  color: var(--md-primary-fg-color) !important;
+  border-left: 4px solid var(--md-primary-fg-color);
+  border-radius: 0 6px 6px 0;
+  padding-left: 0.95rem !important; /* Keep slide-in padding when active */
+}
+
+[data-md-color-scheme="slate"] .md-nav__item--nested.md-nav__item--active > .md-nav__link {
+  background-color: rgba(68, 138, 255, 0.12) !important;
+}
+
+/* --- Individual Page Links under Topics --- */
+.md-nav__list .md-nav__list .md-nav__link {
+  font-size: 0.64rem !important;
+  font-weight: 400 !important;
+  padding: 0.25rem 0.75rem !important;
+  border-radius: 4px;
+  transition: color 0.2s ease-in-out;
+  margin: 0.05rem 0;
+  background-color: transparent !important;
+  border-left: none !important;
+  padding-left: 0.75rem !important; /* Reset slide-in padding */
+}
+
+/* Hover for individual pages */
+.md-nav__list .md-nav__list .md-nav__link:hover {
+  color: var(--md-primary-fg-color) !important;
+  background-color: transparent !important;
+  padding-left: 0.75rem !important; /* Keep static padding */
+}
+
+/* Active individual page - just highlight text color to make it clear where the user is */
+.md-nav__list .md-nav__list .md-nav__link--active {
+  font-weight: 600 !important;
+  color: var(--md-primary-fg-color) !important;
+}
+
+/* Ensure sub-navigation folders indent cleanly */
+.md-nav__list .md-nav__list {
+  padding-left: 0.5rem;
+  border-left: 1px solid var(--md-default-fg-color--lightest);
+  margin-left: 0.75rem;
+}
+
+/* --- Clean Right Table of Contents (TOC) Enhancements --- */
+.md-sidebar--secondary .md-nav__link {
+  padding: 0.25rem 0.75rem !important;
+  border-radius: 4px;
+  font-size: 0.64rem !important; /* MATCHES left side sub-topic font size */
+  transition: all 0.2s ease-in-out;
+  border-left: 2px solid transparent;
+}
+
+/* Hover state for right TOC links */
+.md-sidebar--secondary .md-nav__link:hover {
+  background-color: var(--md-default-fg-color--lightest);
+  color: var(--md-primary-fg-color) !important;
+}
+
+/* Active state for right TOC links */
+.md-sidebar--secondary .md-nav__link--active {
+  font-weight: 500 !important;
+  color: var(--md-primary-fg-color) !important;
+  border-left-color: var(--md-primary-fg-color);
+  background-color: rgba(68, 138, 255, 0.04) !important;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link--active {
+  background-color: rgba(68, 138, 255, 0.08) !important;
+}
+
